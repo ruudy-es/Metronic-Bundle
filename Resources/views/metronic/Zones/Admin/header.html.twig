@@ -1,0 +1,42 @@
+{# src/Ruudy/MetronicBundle/Resources/views/metronic/Zones/Admin/header.html.twig #}
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+
+        <!-- BEGIN LOGO -->
+        {% block logo %}{% endblock %}
+        <!-- END LOGO -->
+
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        {% block responsive_menu_toggler %}{% endblock %}
+        <!-- END RESPONSIVE MENU TOGGLER -->
+
+        <!-- BEGIN TOP NAVIGATION MENU -->
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+
+                <!-- BEGIN NOTIFICATION DROPDOWN -->
+                {% block notification_dropdown %}{% endblock %}
+                <!-- END NOTIFICATION DROPDOWN -->
+
+                <!-- BEGIN INBOX DROPDOWN -->
+                {% block inbox_dropdown %}{% endblock %}
+                <!-- END INBOX DROPDOWN -->
+
+                <!-- BEGIN TODO DROPDOWN -->
+                {% block todo_dropdown %}{% endblock %}
+                <!-- END TODO DROPDOWN -->
+
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+                {% block user_login_dropdown %}{% endblock %}
+                <!-- END USER LOGIN DROPDOWN -->
+
+            </ul>
+        </div>
+        <!-- END TOP NAVIGATION MENU -->
+
+    </div>
+    <!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->

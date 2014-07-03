@@ -1,0 +1,30 @@
+{
+    "name" : "ruudy/metronicbundle",
+    "description" : "Metronic theme disgregated on twigs",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Daniel Abad Cambronero",
+        "email" : "daniel.abad.85@gmail.com"
+    }],
+    "keywords" : [
+        "metronick bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Ruudy\\MetronicBundle" : ""
+        }
+    },
+    "target-dir" : "Ruudy/MetronicBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "0.3-dev"
+        }
+    }
+}

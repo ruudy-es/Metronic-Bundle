@@ -1,0 +1,24 @@
+{# src/Ruudy/MetronicBundle/Resources/views/metronic/Zones/Admin/content.html.twig #}
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+        {% block sample_portlet_configuration %}{% endblock %}
+        <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+        <!-- BEGIN STYLE CUSTOMIZER -->
+        {% block style_customizer %}{% endblock %}
+        <!-- END STYLE CUSTOMIZER -->
+
+        <!-- BEGIN PAGE HEADER-->
+        {% block page_header %}{% endblock %}
+        <!-- END PAGE HEADER-->
+
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row">
+            <div class="col-md-12">
+                {% block page_content %}{% endblock %}
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+</div>

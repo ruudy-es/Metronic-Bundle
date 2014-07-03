@@ -1,0 +1,43 @@
+{# src/Ruudy/MetronicBundle/Resources/views/metronic/metronic.html.twig #}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+    <!-- BEGIN HEAD -->
+    <head>
+        {% block head %}{% endblock %}
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BEGIN BODY -->
+    <body class="{% block body_class %}{% endblock %}">
+
+        <!-- BEGIN HEADER -->
+        {% block header %}{% endblock %}
+        <!-- END HEADER -->
+
+        <div class="clearfix"></div>
+
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            {% block sidebar %}{% endblock %}
+            <!-- END SIDEBAR -->
+
+            <!-- BEGIN CONTENT -->
+            {% block content %}{% endblock %}
+            <!-- END CONTENT -->
+        </div>
+
+        <!-- BEGIN FOOTER -->
+        {% block footer %}{% endblock %}
+        <!-- END FOOTER -->
+
+        <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        {% block javascripts %}{% endblock %}
+        <!-- END JAVASCRIPTS -->
+
+    </body>
+    <!-- END BODY -->
+
+</html>

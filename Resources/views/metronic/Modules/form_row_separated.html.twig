@@ -1,0 +1,17 @@
+{# src/Ruudy/MetronicBundle/Resources/views/metronic/Modules/form_row_separated.html.twig #}
+{#{{ TODO establecer bloques }}#}
+<div class="portlet box {% block portlet_header_color %}{% endblock %}">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa {% block portlet_title_icon %}{% endblock %}"></i>{% block portlet_title %}{% endblock %}
+        </div>
+        <div class="actions">
+            {% block portlet_actions %}{% endblock %}
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        {% block form %}{% endblock %}
+        <!-- END FORM-->
+    </div>
+</div>

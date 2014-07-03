@@ -1,0 +1,40 @@
+{# src/Ruudy/SecurityBundle/Resources/views/metronic/Layouts/login.html.twig #}
+{% extends 'RuudyMetronicBundle:metronic:metronic.html.twig' %}
+
+{% block head %}
+    {{ parent() }}
+
+    {% embed 'RuudyMetronicBundle:metronic:Zones/head.html.twig' %}
+        {% block page_stylesheets %}
+            <link href="{{ asset('bundles/ruudymetronic/global/plugins/select2/select2.css') }}" rel="stylesheet" type="text/css"/>
+            <link href="{{ asset('bundles/ruudymetronic/admin/pages/css/login.css') }}" rel="stylesheet" type="text/css"/>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% embed 'RuudyMetronicBundle:metronic:Zones/javascripts.html.twig' %}
+        {% block page_level_plugin_javascripts %}
+            <script src="{{ asset('bundles/ruudymetronic/global/plugins/jquery-validation/js/jquery.validate.min.js') }}"></script>
+            <script src="{{ asset('bundles/ruudymetronic/global/plugins/select2/select2.min.js') }}"></script>
+        {% endblock %}
+
+        {% block page_level_javascripts %}
+            <script src="{{ asset('bundles/ruudymetronic/global/scripts/metronic.js') }}"></script>
+            <script src="{{ asset('bundles/ruudymetronic/admin/layout/scripts/layout.js') }}"></script>
+            <script src="{{ asset('bundles/ruudymetronic/admin/pages/scripts/login.js') }}"></script>
+        {% endblock %}
+    {% endembed %}
+
+    {% block init_javascripts %}
+        <script>
+            jQuery(document).ready(function() {
+                Metronic.init(); // init metronic core components
+                Layout.init(); // init current layout
+                Login.init();
+            });
+        </script>
+    {% endblock %}
+{% endblock %}

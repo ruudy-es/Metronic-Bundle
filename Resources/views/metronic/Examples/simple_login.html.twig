@@ -1,0 +1,43 @@
+{# src/D2Armory/MetronicBundle/Resources/views/Examples/simple_login.html.twig #}
+{% extends 'RuudyMetronicBundle:Templates:login.html.twig' %}
+
+{% block body_class %}login{% endblock %}
+
+{% block content %}
+
+    {{ parent() }}
+    <!-- BEGIN LOGO -->
+    {% embed 'RuudyMetronicBundle:Pieces:Login/logo.html.twig' %}
+    {% endembed %}
+    <!-- END LOGO -->
+
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        {% embed 'RuudyMetronicBundle:Pieces:Login/login_form.html.twig' %}
+            {% block csrf_token %}
+                <input type="hidden" name="_csrf_token"
+                   value="{{ csrf_token('authenticate') }}"
+                >
+            {% endblock %}
+
+            {# Redefine empty blocks to delete the block contain if we dont wanna show up #}
+            {% block remember %}{% endblock %}
+
+            {% block login_options %}{% endblock %}
+
+            {% block forget_password %}{% endblock %}
+
+            {% block create_account %}{% endblock %}
+        {% endembed %}
+        <!-- END LOGIN FORM -->
+    </div>
+    <!-- END LOGIN -->
+
+    <!-- BEGIN COPYRIGHT -->
+    {% embed 'RuudyMetronicBundle:Pieces:Login/copyright.html.twig' %}
+
+    {% endembed %}
+    <!-- END COPYRIGHT -->
+
+{% endblock %}

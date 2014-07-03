@@ -1,0 +1,17 @@
+{# src/Ruudy/MetronicBundle/Resources/views/metronic/Pieces/Content/page_header.html.twig #}
+<div class="row">
+    <div class="col-md-12">
+        <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+        <h3 class="page-title">
+            {% block page_title %}{% endblock %} <small>{% block page_subtitle %}{% endblock %}</small>
+        </h3>
+        <ul class="page-breadcrumb breadcrumb">
+            {% block page_breadcrumb %}{% endblock %}
+
+            {% block page_datepicker %}{% endblock %}
+
+            {% block actions_dropdown %}{% endblock %}
+        </ul>
+        <!-- END PAGE TITLE & BREADCRUMB-->
+    </div>
+</div>
