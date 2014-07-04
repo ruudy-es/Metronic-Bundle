@@ -1,41 +1,18 @@
 {# src/Ruudy/MetronicBundle/Resources/views/metronic/Pieces/Login/login_form.html.twig #}
 {#{{ TODO establecer bloques }}#}
-<form class="login-form" action="{{ path('login_check') }}" method="post">
+<form class="login-form" action="{% block form_action %}{% endblock %}" method="post">
 
     {% block csrf_token %}{% endblock %}
 
-    <h3 class="form-title">Login to your account</h3>
+    <h3 class="form-title">{% block form_title %}{% endblock %}</h3>
     {% if error %}
-        <div class="alert alert-danger">
-            <button class="close" data-close="alert"></button>
-            <span>{{ error.message }} </span>
-        </div>
+        {% block form_errors %}{% endblock %}
     {% endif %}
 
-    <div class="form-group">
-        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-        <label class="control-label visible-ie8 visible-ie9">Username</label>
-        <div class="input-icon">
-            <i class="fa fa-user"></i>
-            <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="_username"/>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label visible-ie8 visible-ie9">Password</label>
-        <div class="input-icon">
-            <i class="fa fa-lock"></i>
-            <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="_password"/>
-        </div>
-    </div>
+    {% block form_inputs %}{% endblock %}
+
     <div class="form-actions">
-            <label class="checkbox">
-                {% block remember %}
-                    {#<input type="checkbox" name="remember" value="1"/> Remember me#}
-                {% endblock %}
-            </label>
-        <button type="submit" class="btn green pull-right">
-            Login <i class="m-icon-swapright m-icon-white"></i>
-        </button>
+        {% block form_actions %}{% endblock %}
     </div>
     {% block login_options %}
         {#<div class="login-options">#}
