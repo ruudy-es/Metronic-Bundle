@@ -13,6 +13,7 @@
         "MIT"
     ],
     "require" : {
+        "twig/extensions": "~1.0"
     },
     "autoload" : {
         "psr-0" : {
