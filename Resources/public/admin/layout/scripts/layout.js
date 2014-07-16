@@ -573,9 +573,9 @@ var Layout = function () {
             var color_ = (Metronic.isRTL() ? color + '-rtl' : color);
             $('#style_color').attr("href", "/bundles/ruudymetronic/admin/layout/css/themes/" + color_ + ".css");
             if (color == 'light2') {
-                $('.page-logo img').attr('src', '/bundles/ruudymetronic/admin/layout/img/logo-invert.png');
+                $('.page-logo img').attr('src', '/img/logo-invert.png');
             } else {
-                $('.page-logo img').attr('src', '/bundles/ruudymetronic/admin/layout/img/logo.png');
+                $('.page-logo img').attr('src', '/img/logo.png');
             }
             if ($.cookie) {                
                 $.cookie('style_color', color);
