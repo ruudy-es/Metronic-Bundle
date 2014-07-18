@@ -11,7 +11,7 @@
                 <a class="btn default" href="#" data-toggle="dropdown">
                     Columns <i class="fa fa-angle-down"></i>
                 </a>
-                <div id="{% block table_id %}{% endblock %}_column_toggler" class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
+                <div id="{{ table_id }}_column_toggler" class="dropdown-menu hold-on-click dropdown-checkboxes pull-right">
                     {% block columns_filter %}{% endblock %}
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 {#</ul>#}
             {#</div>#}
         </div>
-        <table class="table table-striped table-bordered table-hover" id="{% block table_id %}{% endblock %}">
+        <table class="table table-striped table-bordered table-hover" id="{{ table_id }}">
             <thead>
                 <tr>
                     {% block table_headers %}{% endblock %}
