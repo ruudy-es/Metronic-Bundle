@@ -1,0 +1,45 @@
+{# src/Ruudy/MetronicBundle/Resources/views/form/elements/bootstrap-form-elements.html.twig #}
+{% extends 'form_div_layout.html.twig' %}
+
+{# Input text #}
+{% block form_widget_simple %}
+    {% spaceless %}
+        {% set type = type|default('text') %}
+        <input class="form-control" type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+    {% endspaceless %}
+{% endblock form_widget_simple %}
+
+{# Select multiple #}
+{% block choice_widget_collapsed %}
+    {% spaceless %}
+        {% if required and empty_value is none and not empty_value_in_choices and not multiple %}
+            {% set required = false %}
+        {% endif %}
+        <select class="form-control select2_multiselect" {{ block('widget_attributes') }}{% if multiple %} multiple="multiple"{% endif %}>
+            {% if empty_value is not none %}
+                <option value=""{% if required and value is empty %} selected="selected"{% endif %}>{{ empty_value|trans({}, translation_domain) }}</option>
+            {% endif %}
+            {% if preferred_choices|length > 0 %}
+                {% set options = preferred_choices %}
+                {{ block('choice_widget_options') }}
+                {% if choices|length > 0 and separator is not none %}
+                    <option disabled="disabled">{{ separator }}</option>
+                {% endif %}
+            {% endif %}
+            {% set options = choices %}
+            {{ block('choice_widget_options') }}
+        </select>
+    {% endspaceless %}
+{% endblock choice_widget_collapsed %}
+
+{# Button #}
+{% block button_widget %}
+    {% spaceless %}
+        {% if label is empty %}
+            {% set label = name|humanize %}
+        {% endif %}
+        <button type="{{ type|default('button') }}" {{ block('button_attributes') }}
+            class="btn {% if type == 'submit' %}green{% else %}default{% endif %}"
+        >{{ label|trans({}, translation_domain) }}</button>
+    {% endspaceless %}
+{% endblock button_widget %}
