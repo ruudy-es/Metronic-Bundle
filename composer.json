@@ -1,5 +1,5 @@
 {
-    "name" : "ruudy/metronicbundle",
+    "name" : "ruudy/metronic-bundle",
     "description" : "Metronic theme disgregated on twigs",
     "type" : "symfony-bundle",
     "authors" : [{
