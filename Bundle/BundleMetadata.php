@@ -175,27 +175,27 @@ class BundleMetadata {
         return $this->bundle;
     }
 
-    /**
-     * @return OdmMetadata
-     */
-    public function getOdmMetadata()
-    {
-        return $this->odmMetadata;
-    }
-
-    /**
-     * @return OrmMetadata
-     */
-    public function getOrmMetadata()
-    {
-        return $this->ormMetadata;
-    }
-
-    /**
-     * @return PhpcrMetadata
-     */
-    public function getPhpcrMetadata()
-    {
-        return $this->phpcrMetadata;
-    }
+//    /**
+//     * @return OdmMetadata
+//     */
+//    public function getOdmMetadata()
+//    {
+//        return $this->odmMetadata;
+//    }
+//
+//    /**
+//     * @return OrmMetadata
+//     */
+//    public function getOrmMetadata()
+//    {
+//        return $this->ormMetadata;
+//    }
+//
+//    /**
+//     * @return PhpcrMetadata
+//     */
+//    public function getPhpcrMetadata()
+//    {
+//        return $this->phpcrMetadata;
+//    }
 } 
