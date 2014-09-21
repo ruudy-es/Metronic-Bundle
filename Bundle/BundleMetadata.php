@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruudy\CrudGenerator\Bundle;
+namespace Ruudy\MetronicBundle\Bundle;
 
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
 
