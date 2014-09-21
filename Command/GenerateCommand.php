@@ -13,6 +13,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Ruudy\CrudGenerator\Bundle\BundleMetadata;
 
 class GenerateCommand extends ContainerAwareCommand
 {
