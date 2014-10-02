@@ -1,30 +1,33 @@
 {# src/Ruudy/MetronicBundle/Resources/views/metronic/Zones/javascripts.html.twig #}
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-<!-- BEGIN CORE PLUGINS -->
-<!--[if lt IE 9]>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/respond.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/excanvas.min.js') }}"></script>
-<![endif]-->
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-1.11.0.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-migrate-1.2.1.min.js') }}"></script>
-<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery.blockui.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery.cokie.min.js') }}"></script>
-<script src="{{ asset('bundles/applicationmetronic/global/plugins/uniform/jquery.uniform.min.js') }}"></script>
-<!-- END CORE PLUGINS -->
-<!-- BEGIN PAGE LEVEL PLUGINS -->
-{% block page_level_plugin_javascripts %}{% endblock %}
-<!-- END PAGE LEVEL PLUGINS -->
-<!-- BEGIN PAGE LEVEL SCRIPTS -->
-{% block page_level_javascripts %}{% endblock %}
-<!-- END PAGE LEVEL SCRIPTS -->
-{% block init_javascripts %}{% endblock %}
 
-{% block packages_javascripts %}
-{% endblock %}
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/respond.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/excanvas.min.js') }}"></script>
+    <![endif]-->
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-migrate-1.2.1.min.js') }}"></script>
+    <!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery.blockui.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery.cokie.min.js') }}"></script>
+    <script src="{{ asset('bundles/applicationmetronic/global/plugins/uniform/jquery.uniform.min.js') }}"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    {% block page_level_plugin_javascripts %}{% endblock %}
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    {% block page_level_javascripts %}{% endblock %}
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+    {% block init_javascripts %}{% endblock %}
+
+    {% block packages_javascripts %}{% endblock %}
 
 <!-- END JAVASCRIPTS -->
