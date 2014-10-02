@@ -6,8 +6,8 @@
 
     {% embed 'RuudyMetronicBundle:metronic:zones/head.html.twig' %}
         {% block page_stylesheets %}
-            <link href="{{ asset('bundles/ruudymetronic/global/plugins/select2/select2.css') }}" rel="stylesheet" type="text/css"/>
-            <link href="{{ asset('bundles/ruudymetronic/admin/pages/css/login.css') }}" rel="stylesheet" type="text/css"/>
+            <link href="{{ asset('bundles/applicationmetronic/global/plugins/select2/select2.css') }}" rel="stylesheet" type="text/css"/>
+            <link href="{{ asset('bundles/applicationmetronic/admin/pages/css/login.css') }}" rel="stylesheet" type="text/css"/>
         {% endblock %}
     {% endembed %}
 {% endblock %}
@@ -17,15 +17,15 @@
 
     {% embed 'RuudyMetronicBundle:metronic:zones/javascripts.html.twig' %}
         {% block page_level_plugin_javascripts %}
-            <script src="{{ asset('bundles/ruudymetronic/global/plugins/jquery-validation/js/jquery.validate.min.js') }}"></script>
-            <script src="{{ asset('bundles/ruudymetronic/global/plugins/select2/select2.min.js') }}"></script>
+            <script src="{{ asset('bundles/applicationmetronic/global/plugins/jquery-validation/js/jquery.validate.min.js') }}"></script>
+            <script src="{{ asset('bundles/applicationmetronic/global/plugins/select2/select2.min.js') }}"></script>
         {% endblock %}
 
         {% block page_level_javascripts %}
-            <script src="{{ asset('bundles/ruudymetronic/global/scripts/metronic.js') }}"></script>
-            <script src="{{ asset('bundles/ruudymetronic/admin/layout/scripts/layout.js') }}"></script>
-            <script src="{{ asset('bundles/ruudymetronic/admin/layout/scripts/quick-sidebar.js') }}"></script>
-            <script src="{{ asset('bundles/ruudymetronic/admin/pages/scripts/login.js') }}"></script>
+            <script src="{{ asset('bundles/applicationmetronic/global/scripts/metronic.js') }}"></script>
+            <script src="{{ asset('bundles/applicationmetronic/admin/layout/scripts/layout.js') }}"></script>
+            <script src="{{ asset('bundles/applicationmetronic/admin/layout/scripts/quick-sidebar.js') }}"></script>
+            <script src="{{ asset('bundles/applicationmetronic/admin/pages/scripts/login.js') }}"></script>
         {% endblock %}
     {% endembed %}
 

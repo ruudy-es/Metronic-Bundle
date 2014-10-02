@@ -571,7 +571,7 @@ var Layout = function () {
         // handle theme colors
         var setColor = function (color) {
             var color_ = (Metronic.isRTL() ? color + '-rtl' : color);
-            $('#style_color').attr("href", "/bundles/ruudymetronic/admin/layout/css/themes/" + color_ + ".css");
+            $('#style_color').attr("href", "/bundles/applicationmetronic/admin/layout/css/themes/" + color_ + ".css");
             if (color == 'light2') {
                 $('.page-logo img').attr('src', '/img/logo-invert.png');
             } else {
