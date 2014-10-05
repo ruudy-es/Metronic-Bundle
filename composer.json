@@ -1,6 +1,6 @@
 {
     "name" : "ruudy/metronic-bundle",
-    "description" : "Metronic theme disgregated on twigs",
+    "description" : "Symfony2 Bootstrap Backend/Admin Theme based on Metronic",
     "type" : "symfony-bundle",
     "authors" : [{
         "name" : "Daniel Abad Cambronero",
