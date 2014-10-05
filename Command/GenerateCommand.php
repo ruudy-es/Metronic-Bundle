@@ -103,7 +103,7 @@ EOT
             if ($directory != '') {
                 $origin = realpath($this->bundleSkeletonDir . $directory);
                 if (false !== $origin) {
-                    // TODO copiar recursivamente
+                    // TODO copy it recursive
                     $this->recurse_copy($origin, $dir);
                 }
             }

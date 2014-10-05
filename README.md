@@ -89,6 +89,6 @@ As you can see, this bundle is basically composed by a lot of twigs files.
 
 You only have to take that blocks, zones or pieces and extend it by your own. If you have the metronic package examples it will be faster and easier to you.
 
-
+The Basic idea is that you have the Metronic Theme separated on Zones and you can fill this Zones with Pieces, buy that Pieces can have some Zones to fill with another pieces. Is simple as think about container inherance.
 
 [1]:  http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?WT.ac=search_item&WT.oss_phrase=metronic&WT.oss_rank=1&WT.z_author=keenthemes
