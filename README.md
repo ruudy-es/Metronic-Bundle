@@ -6,7 +6,7 @@ Thanks to Sonata Project, their code inspire me on how to do some things.
 
 Thanks to Metronic - Responsive Admin Dashboard Template creators for the good treatment received.
 
-Latest pages & templates adapated (UPDATES)
+Latest pages & templates adapted (UPDATES)
 ===========================================
 
 * Admin basic layout
