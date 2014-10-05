@@ -91,7 +91,25 @@ You only have to take that blocks, zones or pieces and extend it by your own. If
 
 The Basic idea is that you have the Metronic Theme separated on Zones and you can fill this Zones with Pieces, buy that Pieces can have some Zones to fill with another pieces. Is simple as think about container inherance.
 
-[1]:  http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?WT.ac=search_item&WT.oss_phrase=metronic&WT.oss_rank=1&WT.z_author=keenthemes
+As you can see i tried to maintain the metronic structure, so if metronic have an zone of code commented by:
+
+    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+    ...// some html
+    <!-- END RESPONSIVE MENU TOGGLER -->
+
+In this bundle you will have a zone defined as:
+
+    {% block responsive_menu_toggler %}{% endblock %}
+
+And one twig called:
+
+    responsive_menu_toggler.html.twig
+
+This file have the basic html of the block for create the html container, and you just need to decide what to do:
+
+1. Extend it and fill with the html directly copied from the html example in Metronic Package.
+2. Extend it and create your own html from scratch.
+3. Create your own responsive_menu_toggler and include it in the block.
 
 Examples
 ========
@@ -99,3 +117,6 @@ Examples
 You have some basic examples how this bundle works on the Resources\views\metronic\examples folder.
 
 It will be growing.
+
+
+[1]:  http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?WT.ac=search_item&WT.oss_phrase=metronic&WT.oss_rank=1&WT.z_author=keenthemes
