@@ -13,6 +13,13 @@ Latest pages & templates adapated (UPDATES)
 * Advanced datatables
 * Bootstramp forms based
 
+License
+=======
+
+This bundle is under the MIT license. See the complete license in the bundle:
+
+    Resources/meta/LICENSE
+
 Instalation
 ===========
 
@@ -74,9 +81,19 @@ This project is based on the [**Metronic - Responsive Admin Dashboard Template**
 
 After you have your license, you only have to copy some folders in Bundle generated:
 
-\metronic_3.0.1\metronic\assets\admin -> INTO -> src\Application\Ruudy\MetronicBundle\Resources\public\admin
+    /metronic_3.0.1/metronic/assets/admin
 
-\metronic_3.0.1\metronic\assets\global -> INTO -> src\Application\Ruudy\MetronicBundle\Resources\public\global
+    INTO
+
+    /src/Application/Ruudy/MetronicBundle/Resources/public/admin
+
+and
+
+    /metronic_3.0.1/metronic/assets/global
+
+    INTO
+
+    /src/Application/Ruudy/MetronicBundle/Resources/public/global
 
 **This bundle is stable with Metronic 3.0.1 version, buy i´m working on keep it up to date with the latest metronic releases**
 
