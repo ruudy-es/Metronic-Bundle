@@ -1,0 +1,28 @@
+{% extends 'RuudyMetronicBundle:metronic:zones/admin/header.html.twig' %}
+
+{% block logo %}
+    {% embed 'RuudyMetronicBundle:metronic:pieces/header/logo.html.twig' %}
+        {% block logo_header %}
+            {{ asset('images/logo.png') }}
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
+
+{% block responsive_menu_toggler %}
+    {% embed 'RuudyMetronicBundle:metronic:pieces/header/responsive_menu_toggler.html.twig' %}{% endembed %}
+{% endblock %}
+
+{% block user_login_dropdown %}
+    {% embed 'RuudyMetronicBundle:metronic:pieces/header/user_login_dropdown.html.twig' %}
+        {% block username %}
+            {{ app.user.username }}
+        {% endblock %}
+
+        {% block dropdown_menu %}
+            <li>
+                <a href="{#{{ path('logout') }}#}">
+                    <i class="fa fa-key"></i> Log Out </a>
+            </li>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

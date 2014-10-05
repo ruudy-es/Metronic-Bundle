@@ -92,3 +92,10 @@ You only have to take that blocks, zones or pieces and extend it by your own. If
 The Basic idea is that you have the Metronic Theme separated on Zones and you can fill this Zones with Pieces, buy that Pieces can have some Zones to fill with another pieces. Is simple as think about container inherance.
 
 [1]:  http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?WT.ac=search_item&WT.oss_phrase=metronic&WT.oss_rank=1&WT.z_author=keenthemes
+
+Examples
+========
+
+You have some basic examples how this bundle works on the Resources\views\metronic\examples folder.
+
+It will be growing.
