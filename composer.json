@@ -7,13 +7,18 @@
         "email" : "daniel.abad.85@gmail.com"
     }],
     "keywords" : [
-        "metronick bundle"
+        "symfony2",
+        "metronic bundle",
+        "metronic",
+        "cms",
+        "admin template",
+        "backoffice"
     ],
     "license" : [
         "MIT"
     ],
     "require" : {
-        "php": ">=5.3.2",
+        "php": ">=5.4",
         "symfony/symfony": "2.*",
         "twig/extensions": "~1.0"
     },
@@ -27,7 +32,7 @@
     }],
     "extra" : {
         "branch-alias" : {
-            "dev-master" : "0.3-dev"
+            "dev-master" : "0.1-dev"
         }
     }
 }
