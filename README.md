@@ -2,6 +2,10 @@
 
 I apologize for the inconvenience that my english can produce.
 
+Thanks to Sonata Project, their code inspire me on how to do some things.
+
+Thanks to Metronic - Responsive Admin Dashboard Template creators for the good treatment received.
+
 Latest pages & templates adapated (UPDATES)
 ===========================================
 
@@ -18,8 +22,6 @@ Installation is a quick 4 step process:
 2. Enable the bundle
 3. Generate the required files for the bundle
 4. Download or Buy Metronic Theme and copy some assets folders
-
-Thanks to Sonata Project, me han servido de inspiracion para algunas cosas y gracias a los creadores de Metronic.
     
 Step 1. Download over composer
 ------------------------------
