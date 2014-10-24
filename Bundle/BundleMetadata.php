@@ -23,21 +23,6 @@ class BundleMetadata {
 
     protected $configuration = array();
 
-//    /**
-//     * @var OrmMetadata
-//     */
-//    protected $ormMetadata = null;
-//
-//    /**
-//     * @var OdmMetadata
-//     */
-//    protected $odmMetadata = null;
-//
-//    /**
-//     * @var PhpcrMetadata
-//     */
-//    protected $phpcrMetadata = null;
-
     /**
      * @param BundleInterface $bundle
      * @param array           $configuration
@@ -88,10 +73,6 @@ class BundleMetadata {
         $this->extendedDirectory = sprintf('%s/%s/%s', $this->configuration['application_dir'], $this->vendor, $this->extendedName);
         $this->extendedNamespace = sprintf('Application\\%s\\%s', $this->vendor, $this->extendedName);
         $this->valid = true;
-
-//        $this->ormMetadata = new OrmMetadata($this);
-//        $this->odmMetadata = new OdmMetadata($this);
-//        $this->phpcrMetadata = new PhpcrMetadata($this);
     }
 
     public function isExtendable()
@@ -175,27 +156,4 @@ class BundleMetadata {
         return $this->bundle;
     }
 
-//    /**
-//     * @return OdmMetadata
-//     */
-//    public function getOdmMetadata()
-//    {
-//        return $this->odmMetadata;
-//    }
-//
-//    /**
-//     * @return OrmMetadata
-//     */
-//    public function getOrmMetadata()
-//    {
-//        return $this->ormMetadata;
-//    }
-//
-//    /**
-//     * @return PhpcrMetadata
-//     */
-//    public function getPhpcrMetadata()
-//    {
-//        return $this->phpcrMetadata;
-//    }
 } 
