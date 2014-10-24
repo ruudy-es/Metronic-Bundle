@@ -1,5 +1,7 @@
 # METRONIC BUNDLE
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/7d4a6623-709e-41f6-ae3e-b7c0613f5c12/mini.png)](https://insight.sensiolabs.com/projects/7d4a6623-709e-41f6-ae3e-b7c0613f5c12)
+
 I apologize for the inconvenience that my english can produce.
 
 Thanks to Sonata Project, their code inspire me on how to do some things.
