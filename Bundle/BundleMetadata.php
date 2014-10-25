@@ -156,4 +156,4 @@ class BundleMetadata {
         return $this->bundle;
     }
 
-} 
+}
