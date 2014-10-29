@@ -79,7 +79,7 @@ This command will generate and skeleton bundle on src/Application/Ruudy/, and so
 Step 4. Download or Buy Metronic Theme and copy some assets folders
 -------------------------------------------------------------------
 
-This project is based on the [**Metronic - Responsive Admin Dashboard Template**][1], so you need to buy it to get your licente and all the assets and examples.
+This project is based on the [**Metronic - Responsive Admin Dashboard Template**][1], so you need to buy it to get your license and all the assets and examples.
 
 After you have your license, you only have to copy some folders in Bundle generated:
 
