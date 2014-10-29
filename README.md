@@ -1,6 +1,6 @@
 # METRONIC BUNDLE
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/7d4a6623-709e-41f6-ae3e-b7c0613f5c12/mini.png)](https://insight.sensiolabs.com/projects/7d4a6623-709e-41f6-ae3e-b7c0613f5c12)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/7d4a6623-709e-41f6-ae3e-b7c0613f5c12/mini.png)](https://insight.sensiolabs.com/projects/7d4a6623-709e-41f6-ae3e-b7c0613f5c12) [![Total Downloads](https://poser.pugx.org/ruudy/metronic-bundle/downloads.svg)](https://packagist.org/packages/ruudy/metronic-bundle) [![Latest Stable Version](https://poser.pugx.org/ruudy/metronic-bundle/v/stable.svg)](https://packagist.org/packages/ruudy/metronic-bundle) [![License](https://poser.pugx.org/ruudy/metronic-bundle/license.svg)](https://packagist.org/packages/ruudy/metronic-bundle)
 
 I apologize for the inconvenience that my english can produce.
 
