@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ruudy
- * Date: 18/09/14
- * Time: 23:51
- */
 
 namespace Ruudy\MetronicBundle\Command;
 
@@ -13,6 +7,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Ruudy\MetronicBundle\Bundle\BundleMetadata;
 
+/**
+ * Class GenerateCommand
+ *
+ * @package Ruudy\MetronicBundle\Command
+ */
 class GenerateCommand extends ContainerAwareCommand
 {
     protected $bundleSkeletonDir;
