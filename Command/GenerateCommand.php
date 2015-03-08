@@ -21,7 +21,7 @@ class GenerateCommand extends ContainerAwareCommand
      */
     protected function configure()
     {
-        $this->bundleSkeletonDir = '../Resources/skeleton/bundle/';
+        $this->bundleSkeletonDir = __DIR__ . '../Resources/skeleton/bundle/';
 
         $this
             ->setName('ruudy:metronic:generate')
