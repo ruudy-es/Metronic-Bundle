@@ -61,7 +61,7 @@ Enable the bundle in the kernel:
     {
         $bundles = array(
             // ...
-            new Ruudy\MetronicBundle\RuudyMetronicBundle(),,
+            new Ruudy\MetronicBundle\RuudyMetronicBundle(),
         );
     }
     
